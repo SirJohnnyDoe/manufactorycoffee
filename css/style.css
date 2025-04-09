@@ -1,4 +1,4 @@
-@import "/css/fonts/DXfont.css";
+@import "../css/fonts/DXfont.css";
 /*Reset by Eric Meyer. Thank you very much, Eric*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -116,6 +116,7 @@ button {
 .clearfix { zoom: 1; }
 html {
 	height: 100%;
+	background:#381067 ;
 }
 body {
 	width: 100%;
@@ -138,8 +139,22 @@ strong { font-weight:700; }
 
 
 #main {
-	max-width:1260px;
+	max-width:375px;
 	margin:0 auto;
-	min-width:1000px;
+	min-width:320px;
+	color:#fff;
 }
 
+.icon {
+	display: block;
+	background: black;
+	mask-size: cover;
+	width: 34px;
+	height: 34px;
+	&:hover {
+		background: red;
+	}
+	&.icon-coffee {
+		mask: url(../img/Seed.svg);
+	}
+}
